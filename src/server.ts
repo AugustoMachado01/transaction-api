@@ -1,15 +1,16 @@
 import fastify from 'fastify'
 
-import { PrismaClient } from '@prisma/client'
-
-// import {} from 'prisma'
+import { env } from './env'
+import { transactionsRoutes } from './routes/transactions'
+import cookie from '@fastify/cookie'
 
 const app = fastify()
 
-app.get('/hello', () => {
-  return 'hello world'
+app.register(cookie)
+app.register(transactionsRoutes, {
+  prefix: 'transactions',
 })
 
-app.listen({ port: 3333 }).then(() => {
+app.listen({ port: env.PORT }).then(() => {
   console.log('HTTP Server Running!')
 })

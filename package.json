@@ -15,11 +15,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@fastify/cookie": "^11.0.2",
     "@prisma/client": "^6.2.1",
     "esbuild": "^0.23.1",
     "fastify": "^5.2.1",
     "get-tsconfig": "^4.8.1",
-    "resolve-pkg-maps": "^1.0.0"
+    "resolve-pkg-maps": "^1.0.0",
+    "zod": "^3.24.1"
   },
   "scripts": {
     "dev": "tsx watch src/server.ts",
