@@ -9,5 +9,5 @@ app.listen(
       process.exit(1)
     }
     console.log(`Servidor rodando em ${address}`)
-  }
+  },
 )
