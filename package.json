@@ -19,6 +19,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "tsup": "^8.3.6",
     "@fastify/cookie": "^11.0.2",
     "@prisma/client": "^6.2.1",
     "dotenv": "^16.4.7",
