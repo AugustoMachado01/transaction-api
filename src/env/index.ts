@@ -1,8 +1,6 @@
 import { config } from 'dotenv'
 import { z } from 'zod'
 
-console.log(process.env.NODE_ENV)
-
 config({
   path: process.env.NODE_ENV === 'production' ? '.env.production' : '.env',
 })

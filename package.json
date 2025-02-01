@@ -29,8 +29,7 @@
     "zod": "^3.24.1"
   },
   "scripts": {
-    "dev": "cp prisma/schema.mysql.prisma prisma/schema.prisma && prisma generate && tsx watch src/server.ts",
-    "prod": "cp prisma/schema.postgresql.prisma prisma/schema.prisma && prisma generate && tsx watch src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts --fix",
     "build": "tsup src --out-dir build --format esm",
     "test": "vitest"
